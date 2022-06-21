@@ -1,0 +1,12 @@
+Candidate Elimintation:
+
+1. Write specific hyp(S0) as 0 and general hyp(G0) as ? for the number of the features(columns), excluding OP column
+2. Check from the 1st row/ Check if the result is +ve or -ve
+3. If 1st row is -ve, go to Step 5.
+If 1st row is +ve, then set G1=G0 and S1=1st row values. 
+4. If 2nd row is +ve: then compare S1 with 2nd row values. If any element not matching, then add ? to that element in S2. If matching, then S2=S1.
+For G2, G2=G1 since all ? will match with the individual elements.
+If 2nd row is -ve: then for S2, even if one of the elements doesn't match, then set S2=S1. For G2, if all the elements match, then check follow step 5 instructions. After G2 is created, check if G2 is applicable for previous row elements as well. If any hyp is not matching, then remove that hyp set.
+5. If 1st row is -ve, then set S1=S0. For G1, create individual hyp for each ? of G0 by substituting ? with the corresponding position's 1st row element. The num of hyp sets for this will be equal to num of row attributes.
+
+6. Lastly, compare the final S and final G and check. If dissimilar, check if other hypotesis can be created.

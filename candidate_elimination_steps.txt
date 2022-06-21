@@ -1,0 +1,18 @@
+Candidate Elimination
+General Hypothesis
+(?,?,?,?,?)
+
+Specific Hypothesis
+(0,0,0,0,0)
+
+Initial Declarations:
+(1)Write Specific Hyp(S0) as all nulls, and Generic hyp(G0) as all ??
+(2)If 1st row op is +ve or -ve
+   (a) If +ve, then S1=1st row values. G1=G0.
+   (b) If -ve, then S1=S0.
+	G1.. we will have determine invididual hypothesis for each element
+	and write the opposite value of the 1st row elements each and fill rest of the values with ?
+	Ex: (rainy,?,?,?,?,?),(?,cold,?,?,?,?),....
+(3)If 2nd is +ve, after the 1st row is +ve, 
+
+
